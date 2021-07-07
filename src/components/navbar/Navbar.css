@@ -1,0 +1,167 @@
+nav {
+    display:flex;
+    width:100%;
+    background:#1A335E;
+    position:relative;
+    justify-content: space-between;
+    text-align:center;
+    padding:15px 30px;
+}
+
+nav .icon {
+    font-size:32px;
+    color:#fff;
+    font-weight:600;
+    cursor:pointer;
+}
+
+nav ul {
+    display:flex;
+    list-style: none;
+    margin:auto 0;
+}
+
+nav ul li {
+    margin:0 3rem;
+}
+
+nav ul li a {
+    text-decoration:none;
+    color:#fff;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    background: #2C57A1;
+    padding:12px;
+    border-radius:15px;
+}
+
+
+
+
+nav .search {
+    display:flex;
+    margin:auto 0;
+    height:35px;
+    line-height:35px;
+}
+
+nav .search input {
+    border:none;
+    border-radius:25px; 
+    outline:none;
+    background-color:#537696;
+    height:100%;
+    padding:0 10px;
+    font-size:20px;
+    width:350px;
+}
+
+nav .search input::placeholder {
+    color:#fff;
+}
+
+nav .bar {
+    position:relative;
+    margin:auto;
+    display:none;
+}
+
+input[type="checkbox"]{
+    -webkit-appearance: none;
+    display:none;
+}
+
+.search_material {
+    color:#fff;
+    height:100%;
+    padding:8px;
+    position:absolute;
+    margin-left: 19rem;
+    cursor:pointer;
+    z-index:1;
+}
+
+
+@media screen and (max-width: 1250px) {
+    nav{
+        display:block;
+        padding:0;
+    }
+    nav .icon {
+        display:inline;
+        padding:15px 30px;
+    }
+    nav .search {
+        width:100%;
+        display:inline-flex;
+        justify-content:center;
+        margin-bottom:15px;
+        padding-top:15px;
+    }
+    nav .search input {
+        width:90%;
+        height:30px;;
+    }    
+
+    nav ul {
+        display:flex;
+        flex-direction: column;
+        height:0;
+        visibility: hidden;
+    }
+    nav ul li {
+        text-align:center;
+    }
+    nav ul li a {
+        font-size:28px;
+        padding:25px;
+        padding-left:10%;
+        white-space: nowrap;
+        display:block;
+        background: #1A335E;
+        text-align:center;
+    }
+
+    nav .bar {
+        display:block;
+        position:absolute;
+        top:15px;
+        right:20px;
+        cursor:pointer;
+    }
+    nav .bar #times {
+        display:none;
+    }
+    #check:checked ~ nav .bar #times {
+        display:block;
+    }
+    #check:checked ~ nav .bar #bars {
+        display:none;
+    }
+    #check:checked ~ nav ul {
+        visibility: visible;
+        height:400px;
+    }
+}
+
+/* Laptop Responsiveness */
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+    nav ul li a {
+        font-size:12px;
+    }
+
+    .search_material {
+        margin-top:-4px;
+    }
+
+    nav ul li {
+        margin: 0 2.5rem;
+    }
+    nav .search {
+        margin-left:15px;
+    }
+}
+
