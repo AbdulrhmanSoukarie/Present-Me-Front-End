@@ -1,11 +1,10 @@
-
 import './App.css';
-
+import Testimonials from "./components/testimonials/Testimonials"
 function App() {
   return (
     <div className="App">
 
-      <h1>Hello shbeb</h1>
+      <Testimonials />
     
     </div>
   );
