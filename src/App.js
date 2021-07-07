@@ -1,11 +1,12 @@
 
 import './App.css';
+import { UniqueFeatures } from './UniqueFeatures/UniqueFeatures';
 
 function App() {
   return (
     <div className="App">
 
-      <h1>Hello shbeb</h1>
+      <UniqueFeatures/>
     
     </div>
   );
