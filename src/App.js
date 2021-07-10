@@ -1,6 +1,6 @@
 
 import './App.css';
-import { UniqueFeatures } from './UniqueFeatures/UniqueFeatures';
+import { UniqueFeatures } from './components/UniqueFeatures/UniqueFeatures';
 
 function App() {
   return (
