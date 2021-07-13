@@ -25,12 +25,7 @@ const slideImages = [
 export const Slideshow = () => {
   return (
     <div>
-      <div className="topeventHeader">
-        <EmojiEventsTwoToneIcon className="topeventicon" />
-      </div>
-      <div className="top-event-header">
-        <h1 className="top-eventTitle">TOP EVENTS</h1>
-      </div>
+      
       <div className="flex">
         <div className="slide-container">
           <Slide>

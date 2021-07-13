@@ -40,24 +40,5 @@
     0px 2.12963px 2.74791px rgba(0, 0, 0, 0.155009);
 }
 
-.top-eventTitle {
-  display: inline;
-  padding: 10px;
-  border-top: 2px solid #dadbd3;
-}
 
-.top-event-header {
-  margin-top: 25px;
-  margin-bottom: 25px;
-  display: flex;
-  justify-content: center;
-}
-.topeventHeader {
-  display: flex;
-  justify-content: center;
-}
-.topeventicon {
-  transform: scale(2);
-  margin-top: 40px;
-  
-}
+
