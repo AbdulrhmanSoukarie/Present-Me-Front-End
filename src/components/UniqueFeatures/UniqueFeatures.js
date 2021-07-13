@@ -9,9 +9,7 @@ import SystemUpdateTwoToneIcon from "@material-ui/icons/SystemUpdateTwoTone";
 export const  UniqueFeatures = () => {
   return (
     <div className="all-in">
-      <div className="h1-container">
-        <h1 className="unique-featureTitle">WHAT MAKE US UNIQUE</h1>
-      </div>
+      
       <div className="main-feature-box">
         <div className="unique-featureContainer">
           <OndemandVideoIcon className="icons" />
