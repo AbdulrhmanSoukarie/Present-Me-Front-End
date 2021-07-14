@@ -5,8 +5,9 @@ import Title from './components/titles/Title';
 import Navbar from "./components/navbar/Navbar";
 import Sliders from "./components/slider/Sliders"
 import { UniqueFeatures } from './components/UniqueFeatures/UniqueFeatures';
-
+import {TopEvent} from './components/TopEvent/TopEvent';
 import { Slideshow } from './components/TopEvent/TopEvent';
+
 function App() {
   return (
     <div className="App">
@@ -18,7 +19,9 @@ function App() {
 
       <UniqueFeatures/>
       <Slideshow/>
-    
+      <Title title="Top Event"></Title>
+      <TopEvent></TopEvent>
+      <Title title="Testimonials"></Title>
     </div>
   );
 }
