@@ -9,6 +9,7 @@ import {TopEvent} from './components/TopEvent/TopEvent';
 import { Slideshow } from './components/TopEvent/TopEvent';
 
 import Testimonials from './components/testimonials/Testimonials';
+import Footer from "./components/footer/Footer";
 function App() {
   return (
     <div className="App">
@@ -17,13 +18,13 @@ function App() {
       <Title title="My Category"></Title>
       <Categories></Categories>
       <Title title="What Make Us Uniqe"></Title>
-
       <UniqueFeatures/>
       <Slideshow/>
       <Title title="Top Event"></Title>
       <TopEvent></TopEvent>
       <Title title="Testimonials"></Title>
       <Testimonials />
+      <Footer />
     
     </div>
   );
