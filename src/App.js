@@ -1,12 +1,10 @@
 
 import './App.css';
-
+import Sliders from "./component/slider/Sliders"
 function App() {
   return (
     <div className="App">
-
-      <h1>Hello shbeb</h1>
-    
+    <Sliders></Sliders>
     </div>
   );
 }
