@@ -6,6 +6,7 @@ import Navbar from "./components/navbar/Navbar";
 import Sliders from "./components/slider/Sliders"
 import { UniqueFeatures } from './components/UniqueFeatures/UniqueFeatures';
 
+import { Slideshow } from './components/TopEvent/TopEvent';
 function App() {
   return (
     <div className="App">
@@ -16,6 +17,8 @@ function App() {
       <Title title="What Make Us Uniqe"></Title>
 
       <UniqueFeatures/>
+      <Slideshow/>
+    
     </div>
   );
 }
