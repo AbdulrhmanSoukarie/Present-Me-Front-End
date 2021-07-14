@@ -1,8 +1,8 @@
 
 import './App.css';
-import Sliders from "./component/slider/Sliders"
-import Categories from "./component/categories/Categories"
-import Title from './component/titles/Title';
+import Sliders from "./components/slider/Sliders"
+import Categories from "./components/categories/Categories"
+import Title from './components/titles/Title';
 function App() {
   return (
     <div className="App">
