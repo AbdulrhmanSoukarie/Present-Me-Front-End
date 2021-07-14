@@ -8,6 +8,7 @@ import { UniqueFeatures } from './components/UniqueFeatures/UniqueFeatures';
 import {TopEvent} from './components/TopEvent/TopEvent';
 import { Slideshow } from './components/TopEvent/TopEvent';
 
+import Testimonials from './components/testimonials/Testimonials';
 function App() {
   return (
     <div className="App">
@@ -22,6 +23,8 @@ function App() {
       <Title title="Top Event"></Title>
       <TopEvent></TopEvent>
       <Title title="Testimonials"></Title>
+      <Testimonials />
+    
     </div>
   );
 }
