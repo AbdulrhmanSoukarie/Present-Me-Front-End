@@ -11,6 +11,8 @@ function App() {
       <Sliders></Sliders>
       <Title title="My Category"></Title>
       <Categories></Categories>
+      <Title title="What Make Us Uniqe"></Title>
+
 
     </div>
   );
