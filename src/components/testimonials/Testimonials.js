@@ -21,7 +21,7 @@ function Testimonials() {
   return (
     <div className="container">
       <div className="title_testwrapper">
-        <h2 className="title">Testimonials</h2>
+        
       </div>
       <Swiper
         navigation={true}
