@@ -3,7 +3,8 @@ import "./Navbar.css";
 import SearchIcon from '@material-ui/icons/Search';
 import MenuIcon from '@material-ui/icons/Menu';
 import CloseIcon from '@material-ui/icons/Close';
-
+import { Link } from 'react-router-dom'
+ 
 
 const navbar = () => {
     return (
@@ -16,8 +17,8 @@ const navbar = () => {
                     <SearchIcon style={{fontSize: 30}} className="search_material" />
                 </div>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Discover</a></li>
+                    <li><Link to="/">Home</Link> </li>
+                    <li><Link to="/abed">Discover</Link></li>
                     <li><a href="#">About Us</a></li>
                     <li><a href="#">Contact Us</a></li>
                 </ul>
