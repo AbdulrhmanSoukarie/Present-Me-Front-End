@@ -18,27 +18,31 @@ import { Slideshow } from './components/TopEvent/TopEvent';
 
 import Testimonials from './components/testimonials/Testimonials';
 import Footer from "./components/footer/Footer";
+import { LoginPage } from './components/LoginPage/LoginPage';
 function App() {
   return (
     <div className="App">
       <Router>
               <Switch>
                <Route exact path="/abed">
-               <Navbar />
+               <Navbar  />
                <Home/>
                <Footer />
                </Route>
-              
+               <Route exact path="/admin">
+                        <LoginPage/>
+                     
+               </Route>
                 <Route exact path="/">
                         <Navbar />
                         <Sliders></Sliders>
-                        <Title title="My Category"></Title>
+                        <Title abed="My Category"></Title>
                         <Categories></Categories>
-                        <Title title="What Make Us Uniqe"></Title>
+                        <Title abed="What Make Us Uniqe"></Title>
                         <UniqueFeatures/>
-                        <Title title="Top Event"></Title>
+                        <Title abed="Top Event"></Title>
                         <Slideshow></Slideshow>
-                        <Title title="Testimonials"></Title>
+                        <Title abed="Testimonials"></Title>
                         <Testimonials />
                         <Footer />
                 </Route>

@@ -1,9 +1,9 @@
 import React from 'react'
 import '../titles/title.css'
-function Tittle({title}) {
+function Tittle({abed}) {
     return (
         <div className="title-1">
-            <h1 >{title}</h1>
+            <h1 >{abed}</h1>
         </div>
     )
 }
