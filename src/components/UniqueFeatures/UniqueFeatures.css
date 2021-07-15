@@ -1,5 +1,5 @@
 .unique-featureContainer {
-    height: 20vh;
+  
     display: flex;
     justify-content: space-evenly;
     padding: 80px;
@@ -37,12 +37,7 @@
   }
   
   
-  h1 {
-    display: inline;
-    padding: 15px;
-    border-top: 2px solid #dadbd3;
-    border-bottom: 2px solid  #dadbd3;
-  }
+  
   
   .h1-container {
     margin-top: 25px;

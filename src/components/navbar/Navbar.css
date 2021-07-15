@@ -1,11 +1,11 @@
 nav {
     display:flex;
-    width:100%;
+    
     background:#1A335E;
     position:relative;
-    justify-content: space-between;
+    justify-content: space-around;
     text-align:center;
-    padding:15px 30px;
+    padding:1.4rem 0 1.4rem
 }
 
 nav .icon {
@@ -18,11 +18,16 @@ nav .icon {
 nav ul {
     display:flex;
     list-style: none;
-    margin:auto 0;
+   align-items: center;
 }
 
 nav ul li {
-    margin:0 3rem;
+    width: 10rem;
+    background-color: #2C57A1;
+    margin: 0 1% 0 1%;
+     padding: 12px;
+    border-radius:15px;
+    
 }
 
 nav ul li a {
@@ -30,9 +35,8 @@ nav ul li a {
     color:#fff;
     text-transform: uppercase;
     letter-spacing: 0.1rem;
-    background: #2C57A1;
-    padding:12px;
-    border-radius:15px;
+    
+   
 }
 
 
@@ -109,9 +113,7 @@ input[type="checkbox"]{
         height:0;
         visibility: hidden;
     }
-    nav ul li {
-        text-align:center;
-    }
+    
     nav ul li a {
         font-size:28px;
         padding:25px;
@@ -157,9 +159,7 @@ input[type="checkbox"]{
         margin-top:-4px;
     }
 
-    nav ul li {
-        margin: 0 2.5rem;
-    }
+   
     nav .search {
         margin-left:15px;
     }

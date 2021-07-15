@@ -5,7 +5,7 @@
 
 .btn-style {
 border: none;
-padding: 0.5rem;
+padding: 2.5rem;
 background: #2C57A1;
 box-shadow: 0px 62px 80px rgba(0, 0, 0, 0.5), 0px 22.631px 29.2013px rgba(0, 0, 0, 0.344991), 0px 10.9869px 14.1767px rgba(0, 0, 0, 0.278145), 0px 5.386px 6.94968px rgba(0, 0, 0, 0.221855), 0px 2.12963px 2.74791px rgba(0, 0, 0, 0.155009);
 border-radius: 14px;
@@ -13,7 +13,8 @@ font-size: 1.5rem;
 text-align: center;
 color: #FFFFFF;
 min-width: 10rem;
-margin-bottom: 3rem;
+letter-spacing: 5px;
+
 
 }
 .sub-btn-style {
