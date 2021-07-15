@@ -25,7 +25,6 @@ const slideImages = [
 export const Slideshow = () => {
   return (
     <div>
-      
       <div className="flex">
         <div className="slide-container">
           <Slide>

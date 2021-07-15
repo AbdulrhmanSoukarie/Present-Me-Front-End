@@ -20,9 +20,7 @@ SwiperCore.use([EffectCoverflow, Pagination, Navigation]);
 function Testimonials() {
   return (
     <div className="container">
-      <div className="title_testwrapper">
-        
-      </div>
+      <div className="title_testwrapper"></div>
       <Swiper
         navigation={true}
         effect={"coverflow"}
@@ -43,29 +41,39 @@ function Testimonials() {
       >
         <SwiperSlide className="q">
           <div className="flex_testimonial">
-          <img className="testimonial__img" src={testimonial1} />
-          <h3 className="testimonial__name">Emma Johnson</h3>
-          <p className="testimonial__description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+            <img className="testimonial__img" src={testimonial1} />
+            <h3 className="testimonial__name">Emma Johnson</h3>
+            <p className="testimonial__description">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s
+            </p>
           </div>
         </SwiperSlide>
 
         <SwiperSlide className="q">
           <div className="flex_testimonial">
-          <img className="testimonial__img" src={testimonial2} />
-          <h3 className="testimonial__name">John Doe</h3>
-          <p className="testimonial__description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+            <img className="testimonial__img" src={testimonial2} />
+            <h3 className="testimonial__name">John Doe</h3>
+            <p className="testimonial__description">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s
+            </p>
           </div>
         </SwiperSlide>
 
         <SwiperSlide className="q">
           <div className="flex_testimonial">
-          <img className="testimonial__img" src={testimonial3} />
-          <h3 className="testimonial__name">Zack Smith</h3>
-          <p className="testimonial__description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+            <img className="testimonial__img" src={testimonial3} />
+            <h3 className="testimonial__name">Zack Smith</h3>
+            <p className="testimonial__description">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s
+            </p>
           </div>
         </SwiperSlide>
-        
-        
       </Swiper>
     </div>
   );

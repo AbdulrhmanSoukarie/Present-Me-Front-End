@@ -6,10 +6,9 @@ import DynamicFeedIcon from "@material-ui/icons/DynamicFeed";
 import AccessibilityNewIcon from "@material-ui/icons/AccessibilityNew";
 import SystemUpdateTwoToneIcon from "@material-ui/icons/SystemUpdateTwoTone";
 
-export const  UniqueFeatures = () => {
+export const UniqueFeatures = () => {
   return (
     <div className="all-in">
-      
       <div className="main-feature-box">
         <div className="unique-featureContainer">
           <OndemandVideoIcon className="icons" />

@@ -3,15 +3,10 @@ import "./LoginPage.css";
 import PersonIcon from "@material-ui/icons/Person";
 import LockIcon from "@material-ui/icons/Lock";
 
-
-
 export const LoginPage = () => {
-  
-
   return (
     <div>
-      
-      <form >
+      <form>
         <div className="logincontainer">
           <div className="logincontainer1">
             <h2>Login Page</h2>
@@ -23,8 +18,6 @@ export const LoginPage = () => {
                 className="loginemail"
                 name="adminemail"
                 id="adminemail"
-                
-               
                 required
               />
             </div>
@@ -36,8 +29,6 @@ export const LoginPage = () => {
                 className="loginpassword"
                 name="adminpassword"
                 id="adminpassword"
-                
-                
                 required
               />
             </div>
