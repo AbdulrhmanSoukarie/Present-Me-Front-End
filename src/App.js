@@ -1,4 +1,5 @@
 import './App.css';
+import MainCategories from "./components/allMainCategories/AllCategories";
 
 import Categories from "./components/categories/Categories"
 import Title from './components/titles/Title';
@@ -48,6 +49,9 @@ function App() {
                 </Route>
             </Switch>
             </Router>
+
+      <MainCategories />
+    
     </div>
   );
 }
