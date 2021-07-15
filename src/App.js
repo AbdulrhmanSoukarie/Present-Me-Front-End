@@ -22,9 +22,6 @@ function App() {
   return (
     <div className="App">
       <Router>
-        
-           
-       
               <Switch>
                <Route exact path="/abed">
                <Navbar />
@@ -32,19 +29,19 @@ function App() {
                <Footer />
                </Route>
               
-             <Route exact path="/">
-                    <Navbar />
-                    <Sliders></Sliders>
-                    <Title title="My Category"></Title>
-                    <Categories></Categories>
-                    <Title title="What Make Us Uniqe"></Title>
-                    <UniqueFeatures/>
-                    <Title title="Top Event"></Title>
-                    <Slideshow></Slideshow>
-                    <Title title="Testimonials"></Title>
-                    <Testimonials />
-                    <Footer />
-            </Route>
+                <Route exact path="/">
+                        <Navbar />
+                        <Sliders></Sliders>
+                        <Title title="My Category"></Title>
+                        <Categories></Categories>
+                        <Title title="What Make Us Uniqe"></Title>
+                        <UniqueFeatures/>
+                        <Title title="Top Event"></Title>
+                        <Slideshow></Slideshow>
+                        <Title title="Testimonials"></Title>
+                        <Testimonials />
+                        <Footer />
+                </Route>
             </Switch>
             </Router>
     </div>
