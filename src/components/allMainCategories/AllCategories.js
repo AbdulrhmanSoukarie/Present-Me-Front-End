@@ -46,7 +46,8 @@ const allCategories = () => {
           </div>
         ))}
       </div>
-    </div>
+        </div>  
+     
   );
 };
 

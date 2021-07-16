@@ -4,6 +4,7 @@
 }
 
 .btn-style {
+  width: 15rem;
   border: none;
   padding: 2.5rem;
   background: #2c57a1;
@@ -18,6 +19,8 @@
   color: #ffffff;
   min-width: 10rem;
   letter-spacing: 5px;
+  margin: 2rem;
+  flex-wrap: wrap;
 }
 .sub-btn-style {
   margin: 1rem;

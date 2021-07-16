@@ -3,53 +3,71 @@ import { useState } from "react";
 const abed = [
   {
     id: 1,
-    discrption: "chimestry",
+    discrption: [
+      { subject: "Math" },
+      { subject: "Bio" },
+      { subject: "chimestry" },
+    ],
 
     title: "Education",
   },
   {
     id: 2,
-    discrption: "loli",
+    discrption: [
+      { subject: "Football" },
+      { subject: "Baseball" },
+      { subject: "basketball" },
+      { subject: "Abed" },
+    ],
     title: "Sport",
   },
   {
     id: 3,
-    discrption: "Plitical-3",
+    discrption: [
+      { subject: "Plitical-1" },
+      { subject: "Plitical-2" },
+      { subject: "Plitical-3" },
+    ],
     title: "Political",
   },
 ];
 
 function Dashboard(props) {
-  const [event, setEvent] = useState([]);
-  // const [subject , setSubject] = useState([]);
-  function onClick() {
-    setEvent(abed);
-  }
+  const [buttonPopup, setButtonPopup] = useState(false);
+  const [id, setId] = useState(null);
+  const [des, setDes] = useState([]);
+  const onclick = (e) => {
+    setButtonPopup(true);
+
+    setId(id);
+    abed.map((value) => {
+      if (value.id == e.target.id) {
+        setDes(value.discrption);
+      }
+    });
+  };
 
   return (
-    <div>
-      <div className="btn " style={{ marginTop: "1.5rem" }}>
-        <button className="btn-style" onClick={onClick}>
-          All Events
-        </button>
-      </div>
-      <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr" }}>
-        {event.map((val, index) => (
-          <div
-            style={{
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-            }}
-          >
-            <button onclick={abed} className="btn-style">
-              {val.title}
-            </button>
+    <div className="btn">
+      
+      {abed.map((imageUrl, index) => (
+        <div key={index}>
+          <button id={imageUrl.id} className="btn-style" onClick={onclick}>
+         {imageUrl.title}
+          </button>
           </div>
-        ))}
-      </div>
+                
+      ))}
+           <div>
+              {des.map((val, index) => (
+                <div key={index}>
+                  <button className="sub-btn-style">{val.subject}</button>
+                </div>
+              ))}
+            </div>
     </div>
   );
 }
 
 export default Dashboard;
+
