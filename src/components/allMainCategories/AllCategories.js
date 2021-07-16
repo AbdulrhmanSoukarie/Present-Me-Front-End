@@ -34,8 +34,8 @@ const Categories = [
 
 const allCategories = () => {
   return (
-    return ( 
-  return (
+    
+ 
     <div>
       <div className="container-1">
         {Categories.map((val, index) => (
@@ -50,8 +50,7 @@ const allCategories = () => {
         ))}
       </div>
         </div>  
-      </div>
-    </div>
+     
   );
 };
 

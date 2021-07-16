@@ -42,7 +42,7 @@ function Categories(props) {
     setButtonPopup(true);
 
     setId(id);
-    slideImages.find((value) => {
+    slideImages.map((value) => {
       if (value.id == e.target.id) {
         setDes(value.discrption);
       }
@@ -54,7 +54,7 @@ function Categories(props) {
       {slideImages.map((imageUrl, index) => (
         <div key={index}>
           <button id={imageUrl.id} className="btn-style" onClick={onclick}>
-            {" "}
+       
             {imageUrl.title}
           </button>
 
