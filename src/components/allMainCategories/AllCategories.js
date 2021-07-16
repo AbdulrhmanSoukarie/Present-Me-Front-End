@@ -4,7 +4,6 @@ import Education from "./images/education.png";
 import Music from "./images/music.png";
 import Technology from "./images/technology.png";
 
-
 const Categories = [
   {
     title: "Education",
@@ -34,8 +33,6 @@ const Categories = [
 
 const allCategories = () => {
   return (
-    return ( 
-  return (
     <div>
       <div className="container-1">
         {Categories.map((val, index) => (
@@ -48,8 +45,6 @@ const allCategories = () => {
             </div>
           </div>
         ))}
-      </div>
-        </div>  
       </div>
     </div>
   );
