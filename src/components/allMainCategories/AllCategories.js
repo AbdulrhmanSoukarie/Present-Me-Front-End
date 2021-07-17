@@ -4,6 +4,7 @@ import Education from "./images/education.png";
 import Music from "./images/music.png";
 import Technology from "./images/technology.png";
 
+import { Link } from "react-router-dom";
 const Categories = [
   {
     title: "Education",
@@ -41,13 +42,14 @@ const allCategories = () => {
               className="category-img"
               style={{ backgroundImage: `url(${val.image})` }}
             >
-              <button className="btn-style">{val.title}</button>
+              <Link to="/single" className="btn-style">
+                {val.title}
+              </Link>
             </div>
           </div>
         ))}
       </div>
-        </div>  
-     
+    </div>
   );
 };
 

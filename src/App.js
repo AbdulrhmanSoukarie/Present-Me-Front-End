@@ -3,6 +3,9 @@ import Categories from "./components/categories/Categories";
 import Title from "./components/titles/Title";
 import Navbar from "./components/navbar/Navbar";
 import Sliders from "./components/slider/Sliders";
+import eventImg from "./components/singleEvent/event-img.png";
+import hostImg from "./components/singleEvent/host-image.png";
+import SingleEvent from "./components/singleEvent/SingleEvent";
 import { UniqueFeatures } from "./components/UniqueFeatures/UniqueFeatures";
 import {
   BrowserRouter as Router,
@@ -15,9 +18,6 @@ import {
 
 import { Slideshow } from "./components/TopEvent/TopEvent";
 import "./App.css";
-import SingleEvent from "./components/singleEvent/SingleEvent";
-import eventImg from "./components/singleEvent/event-img.png";
-import hostImg from "./components/singleEvent/host-image.png";
 
 import Testimonials from "./components/testimonials/Testimonials";
 import Footer from "./components/footer/Footer";
@@ -55,17 +55,20 @@ function App() {
             <Testimonials />
             <Footer />
           </Route>
+          <Route exact path="/single">
+            <Navbar></Navbar>
+            <SingleEvent
+              title="Algebra"
+              eventimg={eventImg}
+              description="Prepare for algebra"
+              date="7/7/2021"
+              hostimg={hostImg}
+              hostname="Omar Chouman"
+            />
+            <Footer></Footer>
+          </Route>
         </Switch>
       </Router>
-
-      <SingleEvent
-        title="Algebra"
-        eventimg={eventImg}
-        description="Prepare for algebra"
-        date="7/7/2021"
-        hostimg={hostImg}
-        hostname="Omar Chouman"
-      />
     </div>
   );
 }
