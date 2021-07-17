@@ -20,6 +20,7 @@ import Footer from "./components/footer/Footer";
 import { LoginPage } from "./components/LoginPage/LoginPage";
 import AllCategories from "./components/allMainCategories/AllCategories";
 import Adminpanel from "./components/Adminpanel/Dashboard";
+import { AllEventsSubCategory } from "./components/allEventsSubCategory/allEventsSubCategory";
 function App() {
   return (
     <div className="App">
@@ -38,6 +39,12 @@ function App() {
           <Route exact path="/admin">
             <LoginPage />
           </Route>
+          <Route exact path="/allevent">
+            <Navbar />
+            <AllEventsSubCategory />
+            <Footer />
+          </Route>
+
           <Route exact path="/">
             <Navbar />
             <Sliders></Sliders>
@@ -47,7 +54,7 @@ function App() {
             <UniqueFeatures />
             <Title abed="Top Event"></Title>
             <Slideshow></Slideshow>
-             <Title abed="Testimonials"></Title>
+            <Title abed="Testimonials"></Title>
             <Testimonials />
             <Footer />
           </Route>
