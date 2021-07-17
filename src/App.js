@@ -4,6 +4,7 @@ import Title from "./components/titles/Title";
 import Navbar from "./components/navbar/Navbar";
 import Sliders from "./components/slider/Sliders";
 import { UniqueFeatures } from "./components/UniqueFeatures/UniqueFeatures";
+import { useHistory } from "react-router";
 import {
   BrowserRouter as Router,
   Switch,
