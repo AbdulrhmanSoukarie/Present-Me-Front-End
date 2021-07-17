@@ -26,7 +26,7 @@ const navbar = () => {
             <a href="#">About Us</a>
           </li>
           <li>
-            <a href="#">Contact Us</a>
+            <a href="#footer">Contact Us</a>
           </li>
         </ul>
         <label htmlFor="check" className="bar">
