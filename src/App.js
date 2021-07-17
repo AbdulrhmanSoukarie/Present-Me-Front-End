@@ -14,6 +14,10 @@ import {
 } from "react-router-dom";
 
 import { Slideshow } from "./components/TopEvent/TopEvent";
+import "./App.css";
+import SingleEvent from "./components/singleEvent/SingleEvent";
+import eventImg from "./components/singleEvent/event-img.png";
+import hostImg from "./components/singleEvent/host-image.png";
 
 import Testimonials from "./components/testimonials/Testimonials";
 import Footer from "./components/footer/Footer";
@@ -47,12 +51,21 @@ function App() {
             <UniqueFeatures />
             <Title abed="Top Event"></Title>
             <Slideshow></Slideshow>
-             <Title abed="Testimonials"></Title>
+            <Title abed="Testimonials"></Title>
             <Testimonials />
             <Footer />
           </Route>
         </Switch>
       </Router>
+
+      <SingleEvent
+        title="Algebra"
+        eventimg={eventImg}
+        description="Prepare for algebra"
+        date="7/7/2021"
+        hostimg={hostImg}
+        hostname="Omar Chouman"
+      />
     </div>
   );
 }
