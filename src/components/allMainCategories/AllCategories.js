@@ -1,45 +1,34 @@
+import axios from 'axios';
 import React from 'react';
+import { useState, useEffect } from 'react';
 import "./AllCategories.css";
 import Education from "./images/education.png";
 import Music from "./images/music.png";
 import Technology from "./images/technology.png";
 
 
-const Categories = [
-    {
-        title: "Education",
-        image: Education
-    },
-    {
-        title: "Music",
-        image: Music
-    },
-    {
-        title: "Technology",
-        image: Technology
-    },
-    {
-        title: "Education",
-        image: Education
-    },
-    {
-        title: "Music",
-        image: Music
-    },
-    {
-        title: "Technology",
-        image: Technology
-    }
-];
+const AllCategories = () => {
 
-const allCategories = () => {
+    const [categories, setCategories] = useState([])
+
+    useEffect(() => {
+    axios.get('http://localhost:8000/categories/get')
+        .then(res => {
+            console.log(res);
+            setCategories(res.data);
+        })
+        .catch(err => {
+            console.log(err);
+        })
+})
+
     return ( 
     <div >
         <div className="container">
-            {Categories.map( (val, index) => (
-                <div key={index} className="each-category">
-                    <div className="category-img" style={{ 'backgroundImage': `url(${val.image})`}}>
-                        <button className="btn">{val.title}</button>
+            {categories.map( (category) => (
+                <div key={category.id} className="each-category">
+                    <div className="category-img" style={{ 'backgroundImage': `url(${category.image})`}}>
+                        <button className="btn">{category.name}</button>
                     </div>
                 </div>
             ) )}
@@ -48,4 +37,4 @@ const allCategories = () => {
     )
 }
 
-export default allCategories
+export default AllCategories
