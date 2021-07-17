@@ -11,18 +11,26 @@ export const UniqueFeatures = () => {
     <div className="all-in">
       <div className="main-feature-box">
         <div className="unique-featureContainer">
-          <OndemandVideoIcon className="icons" />
-          <div className="unique-featureBox">
-            Customizable Streaming Platform
+          <div className="commonfeaturebox">
+            <OndemandVideoIcon className="icons" />
+            <div className="unique-featureBox">
+              Customizable Streaming Platform
+            </div>
           </div>
-          <DynamicFeedIcon className="icons" />
-          <div className="unique-featureBox"> Pro User Feedback</div>
-          <AccessibilityNewIcon className="icons" />
-          <div className="unique-featureBox">
-            Free access to multiple content
+          <div className="commonfeaturebox">
+            <DynamicFeedIcon className="icons" />
+            <div className="unique-featureBox"> Pro User Feedback</div>
           </div>
-          <SystemUpdateTwoToneIcon className="icons" />
-          <div className="unique-featureBox">Accurate Leveling System</div>
+          <div className="commonfeaturebox">
+            <AccessibilityNewIcon className="icons" />
+            <div className="unique-featureBox">
+              Free access to multiple content
+            </div>
+          </div>
+          <div className="commonfeaturebox">
+            <SystemUpdateTwoToneIcon className="icons" />
+            <div className="unique-featureBox">Accurate Leveling System</div>
+          </div>
         </div>
       </div>
     </div>
