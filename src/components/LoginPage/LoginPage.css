@@ -4,24 +4,25 @@
   justify-content: center;
   align-items: center;
   height: 30rem;
+  
 }
-.logincontainer1 h2 {
+.logincontainer1 h2{
   color: white;
-  margin-bottom: 20px;
 }
-.loginiconz {
-  color: #2c57a1;
+.loginiconz{
+  color: #2C57A1;
 }
 .logincontainer1 {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #2c57a1;
-
+  background-color: #2C57A1;
+  
   width: 23rem;
   height: 23rem;
   border-radius: 25px;
+  
 }
 
 .loginemail {
@@ -29,6 +30,8 @@
   border: none;
   width: 250px;
   height: 25px;
+  
+  
 }
 
 .loginpassword {
@@ -36,6 +39,7 @@
   border: none;
   width: 250px;
   height: 25px;
+  
 }
 
 .logincontainer button {
@@ -43,16 +47,17 @@
   height: 25px;
   border-radius: 20px;
   border: none;
-  color: #2c57a1;
+  color: #2C57A1;
   box-shadow: -1px 4px 20px -6px rgba(0, 0, 0, 0.75);
 }
 
-.loginicon {
+.loginicon{
   display: flex;
   align-items: center;
-  background-color: white;
+  background-color:white;
   border-radius: 20px;
   padding: 5px;
   margin-bottom: 10px;
   box-shadow: -1px 4px 20px -6px rgba(0, 0, 0, 0.75);
+
 }

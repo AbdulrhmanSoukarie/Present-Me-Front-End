@@ -7,6 +7,7 @@ import eventImg from "./components/singleEvent/event-img.png";
 import hostImg from "./components/singleEvent/host-image.png";
 import SingleEvent from "./components/singleEvent/SingleEvent";
 import { UniqueFeatures } from "./components/UniqueFeatures/UniqueFeatures";
+import { useHistory } from "react-router";
 import {
   BrowserRouter as Router,
   Switch,
@@ -24,6 +25,7 @@ import Footer from "./components/footer/Footer";
 import { LoginPage } from "./components/LoginPage/LoginPage";
 import AllCategories from "./components/allMainCategories/AllCategories";
 import Adminpanel from "./components/Adminpanel/Dashboard";
+import { AllEventsSubCategory } from "./components/allEventsSubCategory/allEventsSubCategory";
 function App() {
   return (
     <div className="App">
@@ -42,6 +44,12 @@ function App() {
           <Route exact path="/admin">
             <LoginPage />
           </Route>
+          <Route exact path="/allevent">
+            <Navbar />
+            <AllEventsSubCategory />
+            <Footer />
+          </Route>
+
           <Route exact path="/">
             <Navbar />
             <Sliders></Sliders>
