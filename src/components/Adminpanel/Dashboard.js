@@ -1,5 +1,6 @@
 import "./dashboard.css";
 import { useState } from "react";
+import { useHistory } from "react-router-dom";
 const abed = [
   {
     id: 1,
@@ -33,6 +34,7 @@ const abed = [
 ];
 
 function Dashboard(props) {
+  let history = useHistory();
   const [buttonPopup, setButtonPopup] = useState(false);
   const [id, setId] = useState(null);
   const [des, setDes] = useState([]);
@@ -49,6 +51,14 @@ function Dashboard(props) {
 
   return (
     <div className="btn">
+      <button
+        onClick={() => {
+          localStorage.removeItem("userInfo");
+          history.push("/");
+        }}
+      >
+        logout
+      </button>
       
       {abed.map((imageUrl, index) => (
         <div key={index}>
