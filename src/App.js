@@ -8,6 +8,7 @@ import hostImg from "./components/singleEvent/host-image.png";
 import SingleEvent from "./components/singleEvent/SingleEvent";
 import { UniqueFeatures } from "./components/UniqueFeatures/UniqueFeatures";
 import { useHistory } from "react-router";
+import CreateSubEvent from "./components/CreateSubEvent /CreateSubEvent";
 import {
   BrowserRouter as Router,
   Switch,
@@ -74,6 +75,9 @@ function App() {
               hostname="Omar Chouman"
             />
             <Footer></Footer>
+          </Route>
+          <Route exact path="/CreateSubEvent">
+            <CreateSubEvent />
           </Route>
         </Switch>
       </Router>
