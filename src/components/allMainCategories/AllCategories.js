@@ -1,49 +1,34 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import "./AllCategories.css";
-import Education from "./images/education.png";
-import Music from "./images/music.png";
-import Technology from "./images/technology.png";
-
 import { Link } from "react-router-dom";
-const Categories = [
-  {
-    title: "Education",
-    image: Education,
-  },
-  {
-    title: "Music",
-    image: Music,
-  },
-  {
-    title: "Technology",
-    image: Technology,
-  },
-  {
-    title: "Education",
-    image: Education,
-  },
-  {
-    title: "Music",
-    image: Music,
-  },
-  {
-    title: "Technology",
-    image: Technology,
-  },
-];
+import axios from "axios";
 
-const allCategories = () => {
+const AllCategories = () => {
+
+  const [categories, setCategories] = useState([])
+
+    useEffect(() => {
+    axios.get('http://localhost:8000/categories/get')
+        .then(res => {
+            console.log(res);
+            setCategories(res.data);
+        })
+        .catch(err => {
+            console.log(err);
+    })
+  })
+
   return (
     <div>
       <div className="container-1">
-        {Categories.map((val, index) => (
-          <div key={index} className="each-category">
+        {categories.map((category) => (
+          <div key={category.id} className="each-category">
             <div
               className="category-img"
-              style={{ backgroundImage: `url(${val.image})` }}
+              style={{ backgroundImage: `url(${category.image})` }}
             >
               <Link to="/single" className="btn-style">
-                {val.title}
+                {category.title}
               </Link>
             </div>
           </div>
@@ -53,4 +38,4 @@ const allCategories = () => {
   );
 };
 
-export default allCategories;
+export default AllCategories;
