@@ -17,7 +17,8 @@ import {
   useRouteMatch,
   useParams,
 } from "react-router-dom";
-
+import aos from "aos";
+import "aos/dist/aos.css";
 import { Slideshow } from "./components/TopEvent/TopEvent";
 import "./App.css";
 
@@ -27,15 +28,14 @@ import { LoginPage } from "./components/LoginPage/LoginPage";
 import AllCategories from "./components/allMainCategories/AllCategories";
 import Adminpanel from "./components/Adminpanel/Dashboard";
 import { AllEventsSubCategory } from "./components/allEventsSubCategory/allEventsSubCategory";
+import SubEvent from "./components/SubEvent/SubEvent";
 function App() {
   return (
     <div className="App">
       <Router>
         <Switch>
           <Route exact path="/dashboard">
-            <Navbar />
             <Adminpanel></Adminpanel>
-            <Footer />
           </Route>
           <Route exact path="/discover">
             <Navbar />
@@ -78,6 +78,11 @@ function App() {
           </Route>
           <Route exact path="/CreateSubEvent">
             <CreateSubEvent />
+          </Route>
+          <Route exact path="/subevent">
+            <Navbar />
+            <SubEvent />
+            <Footer />
           </Route>
         </Switch>
       </Router>

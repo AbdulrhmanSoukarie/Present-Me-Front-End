@@ -1,12 +1,14 @@
 .errorfield {
   display: flex;
   justify-content: center;
+  margin-bottom: 20px;
   
 }
 .errfield {
   background-color: rgb(230, 30, 30);
   width: 40%;
-  height: 2.5rem;
+  height: 3.7rem;
+  overflow: hidden;
   border-radius: 20px;
   padding: 10px;
   text-align: center;

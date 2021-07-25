@@ -18,7 +18,7 @@ export const LoginPage = () => {
   useEffect(() => {
     const userInfo = localStorage.getItem("userInfo");
     console.log(userInfo);
-    
+
     if (userInfo) {
       history.push("/dashboard");
     }
@@ -45,14 +45,13 @@ export const LoginPage = () => {
       console.log(data);
       localStorage.setItem("userInfo", JSON.stringify(data));
       const userInfo = localStorage.getItem("userInfo");
-      console.log(userInfo)
-      const valueeee=userInfo.name
-      console.log(valueeee)
+      console.log(userInfo);
+      const valueeee = userInfo.name;
+      console.log(valueeee);
 
       if (userInfo) {
         history.push("/dashboard");
       }
-      
 
       setLoading(false);
     } catch (error) {

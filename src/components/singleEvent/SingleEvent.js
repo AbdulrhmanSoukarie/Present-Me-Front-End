@@ -13,11 +13,11 @@ const SingleEvent = (props) => {
           <h3>Event Date: {props.date}</h3>
         </div>
         <div className="host-info">
-          <img  src={props.hostimg} alt="" />
+          <img src={props.hostimg} alt="" />
           <h3>{props.hostname}</h3>
         </div>
       </div>
-      <button className="btn">Attend</button>
+      <button className="btn-1">Attend</button>
     </div>
   );
 };

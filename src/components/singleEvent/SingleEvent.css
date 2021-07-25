@@ -46,7 +46,7 @@
   border-radius: 50%;
 }
 
-.btn {
+.btn-1 {
   border: none;
   margin-top: 2rem;
   margin-bottom: 2rem;
@@ -57,9 +57,10 @@
   background: #05668d;
   padding: 10px 60px 10px 60px;
   text-decoration: none;
+  transition: 0.3s;
 }
 
-.btn:hover {
+.btn-1:hover {
   background: #000;
   text-decoration: none;
 }

@@ -1,7 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Popup from "../popup/Popup";
+import aos from "aos";
+import "aos/dist/aos.css";
 import "../categories/categories.css";
+import { Link } from "react-router-dom";
 import { useState } from "react";
+import Aos from "aos";
+
 const slideImages = [
   {
     id: 1,
@@ -38,6 +43,10 @@ function Categories(props) {
   const [buttonPopup, setButtonPopup] = useState(false);
   const [id, setId] = useState(null);
   const [des, setDes] = useState([]);
+
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  });
   const onclick = (e) => {
     setButtonPopup(true);
 
@@ -53,8 +62,12 @@ function Categories(props) {
     <div className="btn">
       {slideImages.map((imageUrl, index) => (
         <div key={index}>
-          <button id={imageUrl.id} className="btn-style" onClick={onclick}>
-       
+          <button
+            data-aos="fade-up"
+            id={imageUrl.id}
+            className="btn-style"
+            onClick={onclick}
+          >
             {imageUrl.title}
           </button>
 
@@ -62,7 +75,9 @@ function Categories(props) {
             <div>
               {des.map((val, index) => (
                 <div key={index}>
-                  <button className="sub-btn-style">{val.subject}</button>
+                  <button className="sub-btn-style">
+                    <Link to="/subevent">{val.subject}</Link>
+                  </button>
                 </div>
               ))}
             </div>
