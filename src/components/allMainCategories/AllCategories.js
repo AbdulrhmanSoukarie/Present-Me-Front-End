@@ -8,7 +8,7 @@ const AllCategories = () => {
   const [categories, setCategories] = useState([])
 
     useEffect(() => {
-    axios.get('http://localhost:8000/categories/get')
+    axios.get('http://localhost:8000/mainw')
         .then(res => {
             console.log(res);
             setCategories(res.data);
@@ -25,7 +25,7 @@ const AllCategories = () => {
           <div key={category.id} className="each-category">
             <div
               className="category-img"
-              style={{ backgroundImage: `url(${category.image})` }}
+              style={{ backgroundImage: `url(${category.imgUrl})` }}
             >
               <Link to="/single" className="btn-style">
                 {category.title}
